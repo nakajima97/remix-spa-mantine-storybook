@@ -12,10 +12,8 @@ const preview: Preview = {
 		},
 	},
 	decorators: [
-		(renderStory) => (
-			<MantineProvider>{ renderStory() } </MantineProvider>
-		)
-	]
+		(renderStory) => <MantineProvider>{renderStory()} </MantineProvider>,
+	],
 };
 
 export default preview;

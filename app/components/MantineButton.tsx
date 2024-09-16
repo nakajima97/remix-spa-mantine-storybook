@@ -1,5 +1,5 @@
-import { Button } from "@mantine/core";
+import { Button } from '@mantine/core';
 
 export const MantineButton = () => {
-  return <Button>Click me</Button>;
+	return <Button>Click me</Button>;
 };
