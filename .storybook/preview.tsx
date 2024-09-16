@@ -1,3 +1,5 @@
+import '@mantine/core/styles.css';
+import { MantineProvider } from '@mantine/core';
 import type { Preview } from '@storybook/react';
 
 const preview: Preview = {
@@ -9,6 +11,9 @@ const preview: Preview = {
 			},
 		},
 	},
+	decorators: [
+		(renderStory) => <MantineProvider>{renderStory()} </MantineProvider>,
+	],
 };
 
 export default preview;
